@@ -1,0 +1,312 @@
+// === Mixins === 
+@mixin font-main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin font-secondary {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin font-third {
+    font-family: 'Courier New', Courier, monospace;
+}
+// === Mixins === 
+
+
+// === button === 
+@mixin button () {
+    width: 159px * $z;
+    height: 54px * $z;
+    background: #061e37;
+    border: none;
+    font-size: 15px;
+    @include font-secondary();
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 400;
+}
+// === / button === 
+
+// === Colors === 
+    $color-white:#ffff;
+// === Colors === 
+
+// === Zoom === 
+    $z: 0.96;
+// === Zoom === 
+
+// === Common === 
+
+body,ul,li,a,div,p,h1 {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      font-size: 15px;
+      @include font-main;
+} 
+
+.section-outer {
+}
+
+.section-inner {
+    width: 1440px *$z ;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+// === Common === 
+
+
+// === header === 
+.section-header {
+    background: url(../img/backgr.jpg) no-repeat 50% 50% ;
+    background-size: cover;
+    display: flex;
+    
+.section-inner {
+    height: 100vh;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(43, 222,197, .9);
+    }
+
+    &-wrapper {   
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-top: 45px *$z;
+
+        &-logo {
+            display: flex;
+            flex-direction: row;
+
+            &_img {
+                align-self: center;
+            }
+            &_text {
+                color: green;
+                @include font-main;
+                font-weight: 'ExtraBold';
+                color: $color-white;
+                margin: 0 0 0 10px;
+                white-space: nowrap;
+           }
+        }
+
+        &-nav {
+            display: flex;
+            list-style: none;
+            @include font-main();
+            font-weight: 'SemiBold';
+            width: 100%;
+            justify-content: flex-end;
+            display: inline-flex;
+
+            a {
+                margin-right: 45px *$z;
+                color: $color-white;
+            }
+            
+            li {
+                display: flex;
+                align-items: flex-end;
+            }
+
+            li:nth-of-type(5) {
+                margin-right: 400px;
+            }
+
+            button {
+                color:$color-white;
+                width: 80px*$z;
+                height: 25px*$z;
+                background:none;
+                border: 1px solid #ffffff;
+                border-radius: 2px;
+                font-size: 12px;
+            }
+        }
+
+        &-content {
+
+            &_title {
+                color: $color-white;
+
+                &__extraBold {
+                    @include font-main();
+                    font-size: 55px;
+                    font-weight: 800;
+                    margin: 165px *$z 0 24px *$z;
+                    text-transform: uppercase;
+                }
+
+                &__regular {
+                    @include font-main();
+                    font-size: 18px;
+                    font-weight: 'regular';
+                    margin-bottom: 40px * $z;
+                    line-height: 30px;
+                }
+            }
+
+            &__form {
+                display: inline-flex;
+                width: 100%;
+                position: relative;
+                
+                &-button-buy {
+                    button {
+                        @include button ();
+                        margin-right: 30px *$z;
+                    }         
+                }
+                
+                &-button-try {
+                    button {
+                        @include button ();
+                        background: #ffff;
+                        margin-right: 500px * $z;
+                        font-weight: bold;
+                    }        
+                }  
+
+                &-video {
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0;
+                    display: flex;
+                    justify-content: center;
+
+                    p {
+                        position: absolute;
+                        margin-top: 175px *$z;
+                        text-transform: uppercase;
+                        @include font-main();
+                        font-weight: bold;
+                    }
+                    
+                    iframe {
+                        border-radius: 5px;
+                    }
+
+                    &-button__play {
+                       background-color: #061e37;
+                       border: none;
+                       position: absolute;
+                       width: 60px;    
+                       height: 60px;
+                       border-radius: 5px;
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                       margin-top: 100px *$z;
+                       border: 3px solid red;
+                    }
+
+                    &-button__play::before {
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 6px 0 6px 10px;
+                        border-color: transparent transparent transparent #fff;
+                    }
+                }
+
+                &-video::before {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background: url(../img/video-backgr.jpg) no-repeat 50% 50% ;
+                    border-radius: 5px;
+                }
+            }
+        }
+    } 
+}
+// === / header ===
+
+
+// === promo === 
+.section-promo {}
+// === / promo ===
+
+
+// === services === 
+.section-services {}
+// === / services ===
+
+
+// === customers === 
+.section-customers {}
+// === / customers ===
+
+
+// === team === 
+.section-team {}
+// === / team ===
+
+
+// === contact === 
+.section-contact {}
+// === / contact ===
+
+
+// === footer === 
+.section-footer {}
+// === / footer ===
+
+
+
+
+
+/*==================================================
+    media queries
+==================================================*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /*.video {
+    height: 40%;
+  }*/
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1499.98px) {
+    html {font-size: 12px;}
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1500px) {
+  html {font-size: 18px;}
+}
+
+
+table {
+    border-collapse: collapse;
+  }
+
+  td {
+    border: 1px solid black;
+    padding: 3px 5px;
+  }

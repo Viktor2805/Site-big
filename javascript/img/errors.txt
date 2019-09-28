@@ -1,0 +1,2 @@
+[2019-9-11 18:34:47] layer "Sophie Turner.jpg": Duplicate path: Sophie Turner.jpg
+[2019-9-11 21:21:34] layer "                 ": Expected Either a default asset specification or a layer asset specification but " " found.
