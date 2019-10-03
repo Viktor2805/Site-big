@@ -26,7 +26,7 @@ body, ul, li, a, div, p, h1 {
 
 .section-header .section-inner {
   height: 100vh;
-  z-index: 10;
+  z-index: 1;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,7 +40,7 @@ body, ul, li, a, div, p, h1 {
 .section-header::before {
   content: "";
   position: absolute;
-  z-index: 5;
+  z-index: 0;
   top: 0;
   right: 0;
   bottom: 0;
@@ -197,6 +197,7 @@ body, ul, li, a, div, p, h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 3;
 }
 
 .section-header-wrapper-content__form-video p {

@@ -1,3 +1,0 @@
-function playVideo() {
-    video.play();
-}
