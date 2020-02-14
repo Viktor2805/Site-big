@@ -1,0 +1,123 @@
+.section-services {
+    display: flex;
+    flex-direction: column;
+
+    &-text {
+        font-size: 15px;
+        line-height: 25px;
+        color: #b0bec5;
+        font-family: "Raleway";
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &-statistics {
+        display: flex;
+        max-width: 800px;
+        min-width: 250px;
+    
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+        padding: 25px;
+        cursor: pointer;
+        box-shadow: 4px 4px 4px 3px #f4f4f4;
+        margin-top: 20px;
+
+        &-wrapper-icons {
+            display: flex;
+            align-items:center;
+            width: 100%;
+            justify-content: space-between;
+
+            &-text {
+                font-size: 15px;
+                color: #061e37;
+                font-weight: 700;
+                @include font-fourth();
+                text-transform:uppercase; 
+                position: relative;
+                right: 260px;
+            }
+
+            i {
+                font-size: 30px;
+                letter-spacing: 1px;
+                line-height: 25px;
+                color: #061e37;
+            }
+        }      
+
+       &-wrapper-slider {
+           display: flex;
+           display: none;
+           cursor: pointer;
+           padding: 26px;
+       }
+    }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .section-services {
+        display: flex;
+        flex-direction: column;
+    
+        &-text {
+            font-size: 15px;
+            line-height: 25px;
+            color: #b0bec5;
+            font-family: "Raleway";
+            font-weight: 400;
+            text-align: center;
+        }
+    
+        &-statistics {
+            display: flex;
+            max-width: 800px;
+            min-width: 250px;
+            width: 100%;
+            border: 2px solid red;
+        
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 auto;
+            padding: 25px;
+            cursor: pointer;
+            box-shadow: 4px 4px 4px 3px #f4f4f4;
+            margin-top: 20px;
+    
+            &-wrapper-icons {
+                display: flex;
+                align-items:center;
+                width: 100%;
+                justify-content: space-between;
+    
+                &-text {
+                    font-size: 15px;
+                    color: #061e37;
+                    font-weight: 700;
+                    @include font-fourth();
+                    text-transform:uppercase; 
+                    position: relative;
+                    // right: 260px;
+                    border: 2px solid red;
+                }
+    
+                i {
+                    font-size: 30px;
+                    letter-spacing: 1px;
+                    line-height: 25px;
+                    color: #061e37;
+                }
+            }      
+    
+           &-wrapper-slider {
+               display: flex;
+               display: none;
+               cursor: pointer;
+               padding: 26px;
+           }
+        }
+    }
+}

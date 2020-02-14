@@ -6,110 +6,287 @@
     <link rel="stylesheet" href="css\main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Raleway:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css\main.scss">
     <link rel="stylesheet" href="css\normalize.css">
     <link rel="stylesheet" href="/styles/mobile.css" media="handheld" />
     <link rel="stylesheet" href="/styles/mobile.css" media="handheld" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <!-- header -->
-    <section class="section-outer section-header">
-        <div class="section-inner">
-            <div class="section-header-wrapper">
-                <div class="section-header-wrapper-logo">
-                    <img src="img/logo.png" class="section-header-wrapper-logo_img">
-                    <div class="section-header-wrapper-logo_text">Dart<br>SERVICE MANAGER</div>
-                </div>
-                <div class="section-header-wrapper-nav">
-                    <li><a href="http://">Home</a></li>
-                    <li><a href="http://">Service</a></li>
-                    <li><a href="http://">Extension</a></li>
-                    <li><a href="http://">Prising</a></li>
-                    <li><a href="http://">Help</a></li>
-                    <li></li><button>Sign Up</button></li>
+<!-- header -->
+<section class="section-outer section-header">
+    <div class="section-inner">
+        <div class="section-header-wrapper">
+            <div class="section-header-wrapper__logo">
+                <img src="img/logo.png" class="section-header-wrapper__logo_img">
+                <div class="section-header-wrapper__logo_text">Dart<br>SERVICE MANAGER</div>
+            </div>
+            <div class="section-header-wrapper__nav">
+                <li><a href="http://">Home</a></li>
+                <li><a href="http://">Service</a></li>
+                <li><a href="http://">Extension</a></li>
+                <li><a href="http://">Prising</a></li>
+                <li><a href="http://">Help</a></li>
+            </div>
+            <button class="t">Sign Up</button>
+        </div>
+        <div class="section-header-wrapper__content">
+            <div class="section-header-wrapper__content-title">
+                <div class="section-header-wrapper__content-title_extraBold">lorem Ipsum <br> Dolor sit amet</div>
+                <div class="section-header-wrapper__content-title_regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod <br> tempor incididunt labore et  dolore magna aliqua.
+                Ut enim ad minim veniam, <br> quis nostrud exercitation ullamc</div>
+                <div class="section-header-wrapper__content__title-button_buy"><button>BUY NOW</button></div>
+                <div class="section-header-wrapper__content__title-button_buy"><button>TRY FOR FREE</button></div>
+            </div>
+            <div class="section-header-wrapper-content__form">
+                <div class="section-header-wrapper-content__form-video">
+                    <!-- <iframe id="v"  src="https://www.youtube.com/embed/Bey4XXJAqS8"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen>
+                    </iframe> -->
+                    <button  class="section-header-wrapper-content__form-video-button__play" type="button"></button>
+                    <p>watch the video</p>
                 </div>
             </div>
-            <div class="section-header-wrapper-content">
-                <div class="section-header-wrapper-content_title">
-                    <div class="section-header-wrapper-content_title__extraBold">lorem Ipsum <br> Dolor sit amet</div>
-                    <div class="section-header-wrapper-content_title__regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                    sed do eiusmod <br> tempor incididunt labore et  dolore magna aliqua.
-                    Ut enim ad minim veniam, <br> quis nostrud exercitation ullamc</div>
-                </div>
-                <div class="section-header-wrapper-content__form">
-                    <div class="section-header-wrapper-content__form-button-buy"><button>BUY NOW</button></div>
-                    <div class="section-header-wrapper-content__form-button-try"><button>TRY FOR FREE</button></div>
-                    <div class="section-header-wrapper-content__form-video">
-                        <iframe id="v" width="580" height="300" src="https://www.youtube.com/embed/Bey4XXJAqS8"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-                        picture-in-picture" allowfullscreen>
-                        </iframe>
-                        <button  class="section-header-wrapper-content__form-video-button__play" type="button"></button>
-                        <p>watch the video</p>
-                    </div>
-                </div>
+        </div>
+    </div>       
+</section>
+<!-- / header -->
+
+<!-- promo -->
+<section class="section-outer section-promo">
+    <div class="section-inner">
+        <h1>Easy & Useful</h1>
+    </div>       
+</section>
+<!-- / promo -->
+
+<!-- services -->
+<section class="section-outer section-services">
+    <div class="section-inner">
+        <h1>Services</h1>
+        <p class="section-services-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor <br> incididunt ut labore et dolore magna
+        </p>
+            <!--TOGGLE ELEMENT INBOX -->
+        <div class="section-services-statistics">
+            <div class="section-services-statistics-wrapper-icons">
+            <i class="material-icons">trending_up</i>
+            <div class="section-services-statistics-wrapper-icons-text">statistics</div>
+            <i class="material-icons">arrow_drop_down</i>
+        </div>
+        <div class="section-services-statistics-wrapper-slider">
+            <img class="section-services-statistics-wrapper_slider-img" src="img\Statistic.jpg" alt="">
+            <p class="section-services-statistics-wrapper_slider-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                dolor in reprehenderit in 
+            </p>
+        </div>
+    </div>
+    <!--TOGGLE ELEMENT INBOX -->
+    <div class="section-services-statistics">
+        <div class="section-services-statistics-wrapper-icons">
+            <i class="material-icons">trending_up</i>
+            <div class="section-services-statistics-wrapper-icons-text">statistics</div>
+            <i class="material-icons">arrow_drop_down</i>
+        </div>
+        <div class="section-services-statistics-wrapper-slider">
+            <img class="section-services-statistics-wrapper_slider-img" src="img\Statistic.jpg" alt="">
+            <p class="section-services-statistics-wrapper_slider-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                dolor in reprehenderit in 
+            </p>
+        </div>     
+    </div> 
+    <div class="section-services-statistics">
+        <div class="section-services-statistics-wrapper-icons">
+            <i class="material-icons">trending_up</i>
+            <div class="section-services-statistics-wrapper-icons-text">statistics</div>
+            <i class="material-icons">arrow_drop_down</i>
+        </div>
+        <div class="section-services-statistics-wrapper-slider">
+            <img class="section-services-statistics-wrapper_slider-img" src="img\Statistic.jpg" alt="">
+            <p class="section-services-statistics-wrapper_slider-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                dolor in reprehenderit in 
+            </p>
+        </div>     
+    </div> 
+    <div class="section-services-statistics">
+        <div class="section-services-statistics-wrapper-icons">
+            <i class="material-icons">trending_up</i>
+            <div class="section-services-statistics-wrapper-icons-text">statistics</div>
+            <i class="material-icons">arrow_drop_down</i>
+        </div>
+        <div class="section-services-statistics-wrapper-slider">
+            <img class="section-services-statistics-wrapper_slider-img" src="img\Statistic.jpg" alt="">
+            <p class="section-services-statistics-wrapper_slider-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                dolor in reprehenderit in 
+            </p>
+        </div>     
+    </div> 
+    </div>      
+</section>
+<!-- / services -->
+
+<!-- customers -->
+<section class="section-outer section-customers">
+    <div class="section-inner">
+        <h1>Our Team</h1>
+        <p></p>
+    </div>       
+</section>
+<!-- / customers -->
+
+    <!-- team -->
+    <section class="section-outer section-team">
+    <div class="section-inner">
+        <h1>Contact Us</h1>
+    </div>       
+</section>
+<!-- / team -->  
+
+<!-- contact -->
+<section class="section-outer section-contact">
+    <div class="section-inner">
+        
+    </div>       
+</section>
+<!-- / contact -->  
+
+<!-- footer -->
+<footer class="section-outer section-footer">
+    <div class="section-inner">
+        <div class="section-header-wrapper">
+            <div class="section-header-wrapper__logo">
+                <img src="img/logo.png" class="section-header-wrapper__logo_img">
+                <div class="section-header-wrapper__logo_text">Dart<br>SERVICE MANAGER</div>
             </div>
-        </div>       
-    </section>
-    <!-- / header -->
+            <div class="section-header-wrapper__nav">
+                <li><a href="http://">Home</a></li>
+                <li><a href="http://">Service</a></li>
+                <li><a href="http://">Extension</a></li>
+                <li><a href="http://">Prising</a></li>
+                <li><a href="http://">Help</a></li>
+            </div>
+        </div>
 
-    <!-- promo -->
-    <section class="section-outer section-promo">
-        <div class="section-inner">
-            trh
-        </div>       
-    </section>
-    <!-- / promo -->
-
-    <!-- services -->
-    <section class="section-outer section-services">
-        <div class="section-inner">
-            trh
-        </div>       
-    </section>
-    <!-- / services -->
-
-    <!-- customers -->
-    <section class="section-outer section-customers">
-        <div class="section-inner">
-            trh
-        </div>       
-    </section>
-    <!-- / customers -->
-
-     <!-- team -->
-     <section class="section-outer section-team">
-        <div class="section-inner">
-            trh
-        </div>       
-    </section>
-    <!-- / team -->  
+        <div class="section-footer-wrapper">
+            <p class="section-footer-wrapper__privacy">
+                <a href="#">Privacy Policy</a>
+                <a href="#">About Us</a>
+                <a href="#">About Us</a>
+            </p>
+            <ul class="section-footer-wrapper__social-logo">
+                <li><a href="https://www.facebook.com/"><img  src="img/facebook.svg" alt=""></a></li>
+                <li><a href=""><img src="img/linkedin.svg" alt=""></a></li>
+                <li><a href=""><img  src="img/instagram.svg" alt=""></a></li>
+                <li><a href=""><img src="img/whatsapp.svg" alt=""></a></li>
+                <li><a href=""><img class="remove_margin-right" src="img/twitter.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>   
+</footer>
+<!-- / footer -->   
     
-    <!-- contact -->
-    <section class="section-outer section-contact">
-        <div class="section-inner">
-            
-        </div>       
-    </section>
-    <!-- / contact -->  
 
-    <!-- footer -->
-    <footer class="section-outer section-footer">
-        <div class="section-inner">
-        </div>       
-    </footer>
-    <!-- / footer -->      
-    <p class="www">Текст абзаца.</p>
-    <p class="www">Текст абзаца.</p>
-    <p class="www">Текст абзаца.</p>
-    <p>Текст абзаца.</p>
-    <input type="submit" onclick="func()">
+<!-- slider -->
+<!-- <div class="wrap">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="slider">
+            <div class="slide slide1">
+            <div class="slide-content">
+                <span>Image One</span>
+            </div>
+            </div>
+            <div class="slide slide2">
+            <div class="slide-content">
+                <span>Image Two</span>
+            </div>
+            </div>
+            <div class="slide slide3">
+            <div class="slide-content">
+                <span>Image Three</span>
+            </div>
+            </div>
+        </div>
+        <div id="arrow-right" class="arrow"></div>
+        </div> -->
+        <!-- / slider -->   
+
+        <!-- <table id="grid">
+            <thead>
+                <tr>
+                <th data-type="number">Age</th>
+                <th data-type="string">Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>5</td>
+                <td>John</td>
+                </tr>
+                <tr>
+                <td>2</td>
+                <td>Pete</td>
+                </tr>
+                <tr>
+                <td>12</td>
+                <td>Ann</td>
+                </tr>
+                <tr>
+                <td>9</td>
+                <td>Eugene</td>
+                </tr>
+                <tr>
+                <td>1</td>
+                <td>Ilya</td>
+                </tr>
+            </tbody>
+            </table>
+            <br>  -->
+
+
+            <!-- <div class="wrapper">
+                <div class="arrowUp" onclick="arrowUp()"></div>
+                <img class="img" src="img\image1.jpg" alt="">
+                <img class="img" src="img\image2.jpg" alt="">
+                <img class="img" src="img\image3.jpg" alt="">
+                <img class="img" src="img\image4.jpg" alt="">
+                <img class="img" src="img\image5.jpg" alt="">
+                <img class="img" src="img\image6.jpg" alt="">
+                <div class="arrowDown" onclick="arrowDown()"></div>
+            </!--> 
+
+            <!-- <div class="wrapper-triple">
+                <div class="index-1" onclick="arrowLeft()"></div>
+                <img class="img-1 slider" src="img\image1.jpg" alt="">
+                <img class="img-1 slider" src="img\image2.jpg" alt="">
+                <img class="img-1 slider" src="img\image3.jpg" alt="">
+                <img class="img-1 slider" src="img\image4.jpg" alt="">
+                <img class="img-1 slider" src="img\image5.jpg" alt="">
+                <img class="img-1 slider" src="img\image6.jpg" alt="">
+                <div class="index-2" onclick="arrowRight()"></div>
+            </div>  -->
 </body>
-
-
-
-
 
 <script  src="js/main.js"></script>
 </html>
