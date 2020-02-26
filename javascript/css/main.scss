@@ -44,10 +44,14 @@ body,a,div,p,h1,li,ul{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-size: 15px;
     @include font-main;
     list-style: none;
+    // border: 1px solid red;
 } 
+
+* {
+    font-size: 62.5%;
+}
 
 .section-outer {
     width: 100%;
@@ -59,8 +63,8 @@ body,a,div,p,h1,li,ul{
     margin: 0 auto;
 
     h1 {
-        font-size: 45px;
-        // color: #061e37;
+        font-size: 4.5rem;
+        color: #061e37;
         font-family: "Raleway";
         font-weight: 600;
         text-align: center;
@@ -81,10 +85,13 @@ body,a,div,p,h1,li,ul{
 // === / promo ===
 
 
+// === counts === 
+@import "counts";
+// === / counts ===
+
 // === services === 
 @import "services";
 // === / services ===
-
 
 // === customers === 
 .section-customers {}

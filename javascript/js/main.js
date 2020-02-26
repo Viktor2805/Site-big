@@ -1,4 +1,5 @@
-
+function name(params) {
+    
     // ===run video === 
 document.querySelector(".section-header-wrapper-content__form-video-button__play").onclick = () => 
 document.getElementById("v").style.zIndex = "12";
@@ -152,13 +153,13 @@ const arrowUp = () => {
 
 // wrapper_triple
 
-let wrapper_triple = [...document.querySelectorAll(".slider")];
+// let wrapper_triple = [...document.querySelectorAll(".slider")];
 
 // for (let i = 0; i < wrapper_triple.length; i++) {
 //     wrapper_triple[i].style.display = "none";
 // }
 
-console.log(wrapper_triple);
+// console.log(wrapper_triple);
 
 // wrapper_triple[4].classList.add("mystyle");
 // wrapper_triple[5].classList.add("mystyle");
@@ -175,23 +176,23 @@ console.log(wrapper_triple);
 
 // wrapper_triple[three].style.display = "block";
 
-const arrowRight = () => {
-    wrapper_triple[one].style.display = "none";
-    wrapper_triple[two].style.display = "none";
-    wrapper_triple[three].style.display = "none";
+// const arrowRight = () => {
+//     wrapper_triple[one].style.display = "none";
+//     wrapper_triple[two].style.display = "none";
+//     wrapper_triple[three].style.display = "none";
 
-    if (three === 6) {
-        three = -1;
-    }
+//     if (three === 6) {
+//         three = -1;
+//     }
 
-    one++;
-    two++;
-    three++;
+//     one++;
+//     two++;
+//     three++;
 
-    wrapper_triple[one].style.display = "block";
-    wrapper_triple[two].style.display = "block";
-    wrapper_triple[three].style.display = "block";
-}
+//     wrapper_triple[one].style.display = "block";
+//     wrapper_triple[two].style.display = "block";
+//     wrapper_triple[three].style.display = "block";
+// }
 
 
 
@@ -256,32 +257,104 @@ const arrowRight = () => {
 // sumPrimes(10);
 
 
+}
 
 
-class User {
-    static staticMethod() {
-        alert(this === User);
-    }
+// const binarySearch = (list, item) => {
+//     let low = 0;
+//     let high = list.length - 1;
+  
+//     while (low <= high) {
+//       const mid = Math.floor((low + high) / 2);
+//       const guess = list[mid];
+  
+//       if (guess === item) {
+//         return mid;
+//       }
+//       if (guess > item) {
+//         high = mid - 1;
+//       } else {
+//         low = mid + 1;
+//       }
+//     }
+  
+//     return null;
+//   };
+  
+//   const myList = [1, 5, 100];
+  
+//   console.log(binarySearch(myList, 5)); // 1
+//   console.log(binarySearch(myList, -1)); // null
+
+
+// const recursive = (arr) => {    
+//     if (arr.length === 0) {
+//         return 0;
+//     } else {        
+//         return 1 + recursive(arr.slice(1));
+//     }
+// }
+
+// console.log(recursive([1,3,3,4]));
+
+// const recursive = (arr) => { 
+//     let total = arr[0];   
+//     for (let index = 0; index < arr.length; index++) {
+//         if (arr[index] > total) {
+//             total = arr[index];
+//         }
+//     }
+//     return total;
+// }
+
+// console.log(recursive([1,2,4,3,6]));
+
+
+// const quickSort = (array) => {
+//     if (array.length < 2) {
+//       return array;
+//     }
+//     const pivot = array[0];
+//     const keysAreLessPivot = array.slice(1).filter(key => key <= pivot);
+//     const keysAreMorePivot = array.slice(1).filter(key => key > pivot);
+//     return [...quickSort(keysAreLessPivot), pivot, ...quickSort(keysAreMorePivot)];
+//   };
+  
+//   console.log(quickSort([10, 5, 2, 3])); // [2, 3, 5, 10]
+
+
+
+
+// const range = (a, b) => {
+//     let arr = []; 
+//     if ((a + 1) === b || a === b) {
+//         return arr;
+//     } else {
+//         arr.push(b - 1);
+//         return range(a, b - 1).concat(arr);          
+//     }
+// }
+
+// console.log(range(-1,2));
+
+
+// const binarySearch = (arr, item) => {
+//     let high = arr[arr.length - 1];
+//     let low = ;
+//     let mid = Math.floor((high + low) / 2);    
+//     let  guess = arr[mid];
+//     console.log(guess);
     
-    get run() {
-        console.log("Fer"); 
-    } 
-}
- 
-let user1 = new User();
 
-User.staticMethod(); 
+//     if (mid === guess) {
+//         return mid;
+//     } else {
+//         return 
+//     }  
+//     return null;
+// }
 
-
-
-
+// console.log(binarySearch([1, 3, 4], 4));
 
 
 
-
-
-for (let index = 0; index < 10; index++) {    
-    setTimeout(function () {
-        console.log(index);    
-    }, 0);  
-}
