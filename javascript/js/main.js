@@ -1,22 +1,4 @@
 function name(params) {
-    
-    // ===run video === 
-document.querySelector(".section-header-wrapper-content__form-video-button__play").onclick = () => 
-document.getElementById("v").style.zIndex = "12";
-// toggle menu
-let menu = document.querySelectorAll(".section-services-statistics");
-let toggle = document.querySelectorAll(".section-services-statistics-wrapper-slider");
-
-    for (let i = 0; i < menu.length; i++) {
-    menu[i].addEventListener("click", myFunction = (e) => {
-        if (toggle[i].style.display == "none") {
-            toggle[i].style.display = "block";
-            // toggle[i].style.transition
-        } else {
-            toggle[i].style.display = "none";
-        };
-    });
-}
 // slider 
 let sliderImages = document.querySelectorAll(".slide"),
   arrowLeft = document.querySelector("#arrow-left"),
@@ -260,6 +242,66 @@ const arrowUp = () => {
 }
 
 
+// === runVideo === // 
+// const runVideo = () => {
+//     document.querySelector(".section-header-wrapper-content__form-video-button__play").onclick = () => 
+//     document.getElementById("v").style.zIndex = "12";
+// }
+// runVideo();
+// === runVideo === //
+
+
+// === toggle menu === //
+(() => {
+    let menu = document.querySelectorAll(".section-services-statistics");
+    let toggle = document.querySelectorAll(".section-services-statistics__wrapper-slider");
+
+    for (let i = 0; i < menu.length; i++) {
+        menu[i].addEventListener("click", myFunction = (e) => {
+            if (toggle[i].style.display == "none") {
+                toggle[i].style.display = "flex";
+            } else {
+                toggle[i].style.display = "none";
+            };
+        });
+    }
+}) ();
+// toggle();
+// === toggle menu === //
+
+
+// === VERTICAL SLIDER === //
+
+// const verticalSlider = () => {
+//     return TransformStream;
+// }
+
+// verticalSlider();
+// === VERTICAL SLIDER === //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const binarySearch = (list, item) => {
 //     let low = 0;
 //     let high = list.length - 1;
@@ -358,3 +400,18 @@ const arrowUp = () => {
 
 
 
+const url = "https://jsonplaceholder.typicode.com/todos/1";
+
+const delay = ms => {
+    return new Promise(r => setTimeout(() => r(), ms));
+};
+
+function functionTodo () {
+    return  delay(1000)
+    .then(() => fetch(url))
+    .then(response => response.json());
+}
+
+functionTodo()
+    .then(json => console.log(json))
+    .catch(error => console.log('error is', error));

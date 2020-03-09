@@ -1,0 +1,174 @@
+.section-contact {
+    background-color: #fafafa;
+
+    .section-inner {
+        
+        article {
+            padding-top: 10em;
+        }
+
+        form {
+            width: fit-content;
+            padding-bottom: 10em;
+            margin: 0 auto;
+            margin-top: 8em;
+            display: flex;
+            flex-direction: column;
+
+    
+            input[type=text] {
+                width: 20em;
+                padding: 1.2em 2em;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1.4rem;
+                color: #061e37;
+                outline: none;
+                margin: 0 auto;
+                margin-bottom: 1.5em;
+            }
+          
+            input:nth-child(1) {
+                margin-right: 3em;
+            }
+            input:nth-child(4) {
+                margin-right: 3em;
+            }
+
+            textarea {
+                font-size: 1.4rem;
+                width: 100%;
+                height: 11em;
+                padding:  1.5em 1.5em;
+                margin-bottom: 3em;
+                border-radius: 5px;
+            }
+
+            .checkbox-container {
+                position: relative;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                display: flex;
+                flex: 1;
+                justify-content: space-between;
+                font-size: 1.5rem;
+                color: #061e37;
+                font-family: "Raleway";
+                font-weight: 500;
+                align-items: center;
+            }
+
+            // input[type = checkbox] {
+            //     opacity: 0;
+            // }
+
+            input[type = checkbox]::after {
+                content: "";
+                width: 45px;
+                height: 45px;
+                background-color: black;
+            }
+
+            label {
+                font-size: 1.6rem;
+                position: absolute;
+                margin-left: 1.2em;
+            }
+
+            button {
+                text-transform: uppercase;
+                background-color: #1de9b6;
+                border: none;
+                font-size: 1.6rem;
+                width: 8.12em;
+                height: 3.12em;
+                border-radius: 5px;
+                color: white;
+            }
+        }
+
+    }
+}
+
+
+/*==================================================
+    media queries
+==================================================*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .section-contact {
+    
+        .section-inner {
+
+            form {
+                // display: flex;
+                // flex-direction: column;
+    
+                input[type=text] {
+                    // width: 20em;
+                    // padding: 1.2em 2em;
+                    font-size: 1.4rem;
+                    margin: 0 auto;
+                    margin-bottom: 1.5em;
+                }
+    
+                .wrapper-input {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+    
+                textarea {
+                    font-size: 1.4rem;
+                    width: 100%;
+                    height: 11em;
+                    padding:  1.5em 1.5em;
+                    margin-bottom: 3em;
+                }
+  
+                label {
+                    font-size: 1.6rem;
+                    position: absolute;
+                    margin-left: 1.2em;
+                }
+    
+                button {
+                    text-transform: uppercase;
+                    background-color: #1de9b6;
+                    border: none;
+                    font-size: 1.6rem;
+                    width: 8.12em;
+                    height: 3.12em;
+                    border-radius: 5px;
+                    color: white;
+                }
+            }
+    
+        }
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .wrapper-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border:2px solid red;
+    }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1499.98px) {
+    
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1500px) {
+}

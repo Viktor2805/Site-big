@@ -10,11 +10,11 @@
   
         p {
             color: #ffff;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 800;
-            line-height: 2.5rem;
+            line-height: 3.5rem;
             @include font-fourth();
-            margin-left: 6%;
+            margin-left: 5%;
         }
     }
 
@@ -37,11 +37,11 @@
     }
 
     .ellipse {
-        width: 6.5em;
-        height: 6.5em;
+        display: flex;
+        width: 16em;
+        height: 16em;
         background-color: #ffff;
         border-radius: 50%;
-        display: flex;
         justify-content: center;
 
         img {
@@ -54,46 +54,6 @@
 @media (max-width: 575.98px) {
     .section-counts {
         display: flex;
-        height: 15em;
-        flex-wrap: wrap;
-    
-        @mixin properties {
-            width: 50%;
-
-            p {
-                font-size: 0.9rem;
-                line-height: 1.2rem;
-            }
-        }
-
-        &-business {
-            @include properties();
-        }
-        &-downloads {
-            @include properties();
-        }
-        &-free-installs {
-            @include properties();
-        }
-        &-pro-users {
-            @include properties();
-        }
-
-        .ellipse {
-            width: 4em;
-            height: 4em;
-
-            img {
-                width: 35%;
-            }
-        }
-    }
-}
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .section-counts {
-        display: flex;
         height: 17em;
         flex-wrap: wrap;
     
@@ -101,8 +61,47 @@
             width: 50%;
 
             p {
-                font-size: 0.9rem;
-                line-height: 1.2rem;
+                font-size: 1.3rem;
+                line-height: 2rem;
+            }
+        }
+
+        &-business {
+            @include properties();
+        }
+        &-downloads {
+            @include properties();
+        }
+        &-free-installs {
+            @include properties();
+        }
+        &-pro-users {
+            @include properties();
+        }
+
+        .ellipse {
+            width: 10em;
+            height: 10em;
+
+            img {
+                width: 35%;
+            }
+        }
+    }
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .section-counts {
+        display: flex;
+        height: 19em;
+        flex-wrap: wrap;
+    
+        @mixin properties {
+            width: 50%;
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2.2rem;
             }
         }
 
@@ -119,8 +118,8 @@
             @include properties();
         }
         .ellipse {
-            width: 4.5em;
-            height: 4.5em;
+            width: 11em;
+            height: 11em;
 
             img {
                 width: 35%;
@@ -132,15 +131,15 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
     .section-counts {
         display: flex;
-        height: 22em;
+        height: 24em;
         flex-wrap: wrap;
     
         @mixin properties {
             width: 50%;
 
             p {
-                font-size: 1.4rem;
-                line-height: 1.8rem;
+                font-size: 2rem;
+                line-height: 2.7rem;
             }
         }
 
@@ -158,8 +157,8 @@
         }
         
         .ellipse {
-            width:6em;
-            height:6em;
+            width:14em;
+            height:14em;
 
             img {
                 width: 35%;
@@ -170,16 +169,16 @@
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1499.98px) {
     .section-counts {
-        height: 20em;
+        height: 15em;
 
         p {
-            font-size: 1.8rem;
-            line-height: 2.5rem;
+            font-size: 1.6rem;
+            line-height: 2.7rem;
         }
 
         .ellipse {
-            width: 8.5em;
-            height: 8.5em;
+            width: 13em;
+            height: 13em;
 
             img {
                 width: 35%;
@@ -188,6 +187,22 @@
     }
 }
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1500px) {
+@media (min-width: 1800px) {
+       .section-counts {
+        height: 17em;
 
+        p {
+            font-size: 2.5rem;
+            line-height: 3.8rem;
+        }
+
+        .ellipse {
+            width: 19em;
+            height: 19em;
+
+            img {
+                width: 35%;
+            }
+        }
+    }
 }

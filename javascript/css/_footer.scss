@@ -1,37 +1,109 @@
 .section-footer {
     background-color: #061e37;
-    height: 250px;
-    padding-top: 75px;
+    padding-top: 7.5em;
     color: $color-white;
-
+    padding-bottom: 10em;
+    max-height: 30em;
+    
     .section-header-wrapper {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     &-wrapper {
         display: flex;
         justify-content:space-between;
+        margin-top: 13em;
 
         &__privacy {
             a {
-                font-size: 15px;
+                font-size: 1.5rem;
                 color: #627181;
                 font-family: "Raleway";
                 font-weight: 400;
-                margin-right: 40px;
+                margin-right: 3em;
             }
         }
 
         &__social-logo {
             display: flex;
+
             img {
-                width: 20px;
+                width: 20xp;
                 height: 20px;
                 margin-left: 20px;
             }
         }
     }
 }
+
+/*==================================================
+    media queries
+==================================================*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /*.video {
+    height: 40%;
+  }*/
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1499.98px) {
+    html {font-size: 12px;}
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1800px) {
+    .section-footer {
+        background-color: #061e37;
+        padding-top: 7.5em;
+        color: $color-white;
+        padding-bottom: 10em;
+        max-height: 30em;
+        
+        .section-header-wrapper {
+            margin-top: 0;
+
+                a {
+                    font-size: 2.2rem;
+                }
+        }
+    
+        &-wrapper {
+            display: flex;
+            justify-content:space-between;
+            margin-top: 13em;
+    
+            &__privacy {
+                a {
+                    font-size: 2.5rem;
+                    color: #627181;
+                    font-family: "Raleway";
+                    font-weight: 400;
+                    margin-right: 3em;
+                }
+            }
+    
+            &__social-logo {
+                display: flex;
+    
+                img {
+                    width: 20xp;
+                    height: 20px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
 
 
 
