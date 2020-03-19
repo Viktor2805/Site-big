@@ -271,13 +271,163 @@ const arrowUp = () => {
 
 
 // === VERTICAL SLIDER === //
+const vertical_Slider = () => {
+    const reviews = [...document.querySelectorAll(".wrapper-slider__reviews")];
 
-// const verticalSlider = () => {
-//     return TransformStream;
-// }
+    for (let i = 0; i < reviews.length; i++) {
+       reviews[i].style.display = "none";
+    }
 
-// verticalSlider();
+    firstReview = 0;
+    secondReview = 1;
+
+    reviews[firstReview].style.display = "flex";
+    reviews[firstReview].style.marginBottom = "25em";
+    reviews[secondReview].style.display = "flex";
+
+    const arrow_Down = document.querySelector(".wrapper-slider__arrow--down").
+    addEventListener("click", arrowDown = (e) => {
+        reviews[firstReview].style.display = "none";
+        reviews[secondReview].style.display = "none";
+
+        firstReview--;
+        secondReview--;
+
+        if (firstReview === -1) {
+            firstReview = reviews.length - 1;
+        }
+        if (secondReview === -1) {
+            secondReview = reviews.length - 1;
+        }
+
+        add_ProperyToReviews();
+    });
+
+    const arrow_Up = document.querySelector(".wrapper-slider__arrow--up").
+    addEventListener("click", arrowUp = (e) => {
+        reviews[firstReview].style.display = "none";
+        reviews[secondReview].style.display = "none";
+
+        firstReview++;
+        secondReview++;
+
+        if (firstReview === reviews.length) {
+            firstReview = 0;
+        }
+        if (secondReview ===  reviews.length) {
+            secondReview = 0;
+        }
+
+        add_ProperyToReviews();
+    });
+
+    const add_ProperyToReviews = () => {
+        reviews[firstReview].style.display = "flex";
+        reviews[secondReview].style.display = "flex";
+
+        reviews[firstReview].style.order = "0";
+        reviews[secondReview].style.order = "1";
+
+        reviews[firstReview].style.marginBottom = "25em";
+        reviews[secondReview].style.margin = "0";
+    }
+}
+
+vertical_Slider();
 // === VERTICAL SLIDER === //
+
+
+// === SLIDE SHOW === //
+
+const slide_Show = () => {
+    const images = [...document.querySelectorAll(".img")];
+
+    for (let i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+    }
+
+    firstImg = 0;
+    secondImg = 1;
+    thirdImg = 2;
+
+    images[firstImg].style.display = "block";
+
+    images[secondImg].style.display = "block";
+    images[secondImg].classList.add("img-center");
+
+    images[thirdImg].style.display = "block";
+
+    const arrow_Left = document.querySelector(".arrowLeft").
+    addEventListener("click", arrowLeft = (e) => {
+        images[firstImg].style.display = "none";
+        images[secondImg].style.display = "none";
+        images[thirdImg].style.display = "none";
+
+        firstImg--;
+        secondImg--;
+        thirdImg--;
+
+        if (firstImg === -1) {
+            firstImg = images.length - 1;
+        }
+        if (secondImg === -1) {
+            secondImg = images.length - 1;
+        }
+        if (thirdImg === -1) {
+            thirdImg = images.length - 1;
+        }
+
+        console.log(firstImg,secondImg,thirdImg);
+
+        add_ProperyToImages();
+    });
+
+    const arrow_Right = document.querySelector(".arrowRight").
+    addEventListener("click", arrowRight = (e) => {
+        images[firstImg].style.display = "none";
+        images[secondImg].style.display = "none";
+        images[thirdImg].style.display = "none";
+
+        firstImg++;
+        secondImg++;
+        thirdImg++;
+
+        if (firstImg === images.length) {
+            firstImg = 0;
+        }
+        if (secondImg ===  images.length) {
+            secondImg = 0;
+        }
+        if (thirdImg ===  images.length) {
+            thirdImg = 0;
+        }
+        console.log(firstImg, secondImg,thirdImg );
+        
+
+        add_ProperyToImages();
+    });
+
+    const add_ProperyToImages = () => {
+        images[firstImg].style.display = "block";
+        images[firstImg].classList.remove("img-center");
+
+        images[secondImg].style.display = "block";
+        images[secondImg].classList.add("img-center");
+
+        images[thirdImg].style.display = "block";
+        images[thirdImg].classList.remove("img-center");
+
+        images[firstImg].style.order = "1";
+        images[secondImg].style.order = "2";
+        images[thirdImg].style.order = "3";
+    }
+}
+
+slide_Show();
+
+// === SLIDE SHOW === //
+
+
 
 
 
@@ -400,18 +550,18 @@ const arrowUp = () => {
 
 
 
-const url = "https://jsonplaceholder.typicode.com/todos/1";
+// const url = "https://jsonplaceholder.typicode.com/todos/1";
 
-const delay = ms => {
-    return new Promise(r => setTimeout(() => r(), ms));
-};
+// const delay = ms => {
+//     return new Promise(r => setTimeout(() => r(), ms));
+// };
 
-function functionTodo () {
-    return  delay(1000)
-    .then(() => fetch(url))
-    .then(response => response.json());
-}
+// function functionTodo () {
+//     return  delay(1000)
+//     .then(() => fetch(url))
+//     .then(response => response.json());
+// }
 
-functionTodo()
-    .then(json => console.log(json))
-    .catch(error => console.log('error is', error));
+// functionTodo()
+//     .then(json => console.log(json))
+//     .catch(error => console.log('error is', error));

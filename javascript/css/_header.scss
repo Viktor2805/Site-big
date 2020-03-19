@@ -5,7 +5,6 @@
     color:$color-white;
 
 .section-inner {
-    z-index: 1;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,7 +12,6 @@
     &::before {
         content: "";
         position: absolute;
-        z-index: 0;
         top: 0;
         right: 0;
         bottom: 0;

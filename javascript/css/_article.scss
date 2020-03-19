@@ -26,6 +26,43 @@
 }
 
 
+/*==================================================
+    media queries
+==================================================*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .section-inner {        
+        h1 {
+            font-size: 5.5rem;
+        }
+    
+        .article-text {
+            font-size: 1.7rem;
+            line-height: 4rem;
+        }
+    }    
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /*.video {
+    height: 40%;
+  }*/
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1499.98px) {
+    
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1500px) {
+}
+
+
 @media (min-width: 1800px) {
     .section-inner {        
         h1 {
