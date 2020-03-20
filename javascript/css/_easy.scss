@@ -23,8 +23,8 @@
                 align-items: center;
 
                 .icon-title {
-                    width: 50em;
-                    height: 50em;
+                    width: 60em;
+                    height: 60em;
                 }
                 
                 h2 {
@@ -32,6 +32,7 @@
                     color: #061e37;
                     font-family: "Raleway";
                     font-weight: 600;
+                    margin: 1em 0 0.5em 0;
                 }
 
                 .text-title {
@@ -171,13 +172,19 @@
     
                 .wrapper-title {
                     margin-bottom: 15em;
+                    // border: 2px solid red;
 
                     h2 {
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                     }
                     .text-title {
-                        font-size: 1.5rem;
+                        font-size: 1.3rem;
                         line-height: 1.7em;
+                        text-align: center;
+                        padding: 0 1em ;
+                    }
+                    br {
+                        display: none;
                     }
                 }
             }
@@ -204,10 +211,14 @@
                 }
             }
             .wrapper-easy {
-    
+              
                 .wrapper-title {
                     margin-bottom: 15em;
 
+                    .icon-title {
+                        width: 75em;
+                        height: 75em;
+                    }
                     h2 {
                         font-size: 2.5rem;
                     }

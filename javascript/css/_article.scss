@@ -65,14 +65,16 @@
 
 @media (min-width: 1800px) {
     .section-inner {        
+       .wrapper-title {
         h1 {
             font-size: 5.5rem;
         }
     
         .article-text {
-            font-size: 2.5rem;
+            font-size: 5.5rem;
             line-height: 4rem;
         }
+       }
     }    
 }
 

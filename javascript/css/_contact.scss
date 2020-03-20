@@ -44,86 +44,68 @@
                 outline: none;
             }
 
-            // here is wrapper of checkbox 
-
-            .wrapper-checkbox {
-                position: relative;
-                cursor: pointer;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
+            .checkbox {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: 1.5rem;
-                color: #061e37;
-                font-family: "Raleway";
-                font-weight: 500;
 
-                .checkbox {
+                /*Checkboxes styles*/
+                input[type="checkbox"] { display: none; }
+                
+                input[type="checkbox"] + label {
+                    display: block;
                     position: relative;
-   
-                    /*Checkboxes styles*/
-                    input[type="checkbox"] { display: none; }
-                    
-                    input[type="checkbox"] + label {
-                        display: block;
-                        position: relative;
-                        padding-left: 2em;
-                        font: 1.6rem  sans-serif;
-                        font-family: "Raleway";
-                        font-weight: 500;
-                        cursor: pointer;
-                        -webkit-user-select: none;
-                        -moz-user-select: none;
-                        -ms-user-select: none;
-                    }
-                    
-                    
-                    input[type="checkbox"] + label:before {
-                        content: '';
-                        display: block;
-                        width: 20px;
-                        height: 20px;
-                        border: 1.5px solid #6cc0e5;
-                        position: absolute;
-                        border-radius: 5px;
-                        left: 0;
-                        top: 0;
-                        opacity: .6;
-                        -webkit-transition: all .12s, border-color .08s;
-                        transition: all .12s, border-color .08s;
-                    }
-                    
-                    input[type="checkbox"]:checked + label:before {
-                        width: 10px;
-                        top: -5px;
-                        left: 5px;
-                        border-radius: 0;
-                        opacity: 1;
-                        border-top-color: transparent;
-                        border-left-color: transparent;
-                        -webkit-transform: rotate(45deg);
-                        transform: rotate(45deg);
-                    }
+                    padding-left: 2em;
+                    font: 1.6rem  sans-serif;
+                    font-family: "Raleway";
+                    font-weight: 500;
+                    cursor: pointer;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
                 }
-
-                button {
-                    text-transform: uppercase;
-                    background-color: #1de9b6;
-                    border: none;
-                    font-size: 1.6rem;
-                    width: 8.12em;
-                    height: 3.12em;
+                
+                input[type="checkbox"] + label:before {
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    border: 1.5px solid #6cc0e5;
+                    position: absolute;
                     border-radius: 5px;
-                    color: white;
+                    left: 0;
+                    top: 0;
+                    opacity: .6;
+                    -webkit-transition: all .12s, border-color .08s;
+                    transition: all .12s, border-color .08s;
                 }
-            }   
-        }
+                
+                input[type="checkbox"]:checked + label:before {
+                    width: 10px;
+                    top: -5px;
+                    left: 5px;
+                    border-radius: 0;
+                    opacity: 1;
+                    border-top-color: transparent;
+                    border-left-color: transparent;
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+
+            button {
+                text-transform: uppercase;
+                background-color: #1de9b6;
+                border: none;
+                font-size: 1.6rem;
+                width: 8.12em;
+                height: 3.12em;
+                border-radius: 5px;
+                color: white;
+            }
+        }   
     }
 }
-
 
 /*==================================================
     media queries
@@ -136,21 +118,13 @@
         .section-inner {
 
             form {
-                // display: flex;
-                // flex-direction: column;
-    
+       
                 input[type=text] {
-                    // width: 20em;
-                    // padding: 1.2em 2em;
                     font-size: 1.4rem;
                     margin: 0 auto;
                     margin-bottom: 1.5em;
                 }
                 
-                .wrapper-checkbox {
-                    flex-direction: column;
-                }
-
                 .wrapper-input {
                     display: flex;
                     flex-direction: column;
@@ -164,16 +138,19 @@
                     padding:  1.5em 1.5em;
                     margin-bottom: 3em;
                 }
-  
-                label {
-                    font-size: 1.6rem;
-                    position: absolute;
-                    margin-left: 1.2em;
-                }
-    
-                button {
-                    font-size: 1.6rem;
-                    margin-top: 2em;
+                
+                .checkbox {
+                    flex-direction: column;
+
+                    label {
+                        font-size: 1.6rem;
+                        position: absolute;
+                    }
+        
+                    button {
+                        font-size: 1.6rem;
+                        margin-top: 2em;
+                    }
                 }
             }
     
@@ -202,13 +179,12 @@
                     }
                 }
 
-                .wrapper-checkbox {
+                .checkbox {
                     flex-direction: column;
 
                     label {
                         font-size: 1.6rem;
                         position: absolute;
-                        margin-left: 1.2em;
                     }
 
                     button {

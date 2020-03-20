@@ -77,11 +77,11 @@ body {
 /* Large devices (desktops, 992px and up)*/
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1800px) {
-  .section-inner h1 {
+  .section-inner .wrapper-title h1 {
     font-size: 5.5rem;
   }
-  .section-inner .article-text {
-    font-size: 2.5rem;
+  .section-inner .wrapper-title .article-text {
+    font-size: 5.5rem;
     line-height: 4rem;
   }
 }
@@ -394,8 +394,8 @@ body {
 }
 
 .section-easy .section-inner .wrapper-easy .wrapper-title .icon-title {
-  width: 50em;
-  height: 50em;
+  width: 60em;
+  height: 60em;
 }
 
 .section-easy .section-inner .wrapper-easy .wrapper-title h2 {
@@ -403,6 +403,7 @@ body {
   color: #061e37;
   font-family: "Raleway";
   font-weight: 600;
+  margin: 1em 0 0.5em 0;
 }
 
 .section-easy .section-inner .wrapper-easy .wrapper-title .text-title {
@@ -522,11 +523,16 @@ body {
     margin-bottom: 15em;
   }
   .section-easy .section-inner .wrapper-easy .wrapper-title h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .section-easy .section-inner .wrapper-easy .wrapper-title .text-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.7em;
+    text-align: center;
+    padding: 0 1em;
+  }
+  .section-easy .section-inner .wrapper-easy .wrapper-title br {
+    display: none;
   }
   .section-easy button {
     margin-bottom: 4em;
@@ -540,6 +546,10 @@ body {
   }
   .section-easy .section-inner .wrapper-easy .wrapper-title {
     margin-bottom: 15em;
+  }
+  .section-easy .section-inner .wrapper-easy .wrapper-title .icon-title {
+    width: 75em;
+    height: 75em;
   }
   .section-easy .section-inner .wrapper-easy .wrapper-title h2 {
     font-size: 2.5rem;
@@ -1357,13 +1367,7 @@ body {
   outline: none;
 }
 
-.section-contact .section-inner form .wrapper-checkbox {
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.section-contact .section-inner form .checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1373,22 +1377,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.5rem;
-  color: #061e37;
-  font-family: "Raleway";
-  font-weight: 500;
-}
-
-.section-contact .section-inner form .wrapper-checkbox .checkbox {
-  position: relative;
   /*Checkboxes styles*/
 }
 
-.section-contact .section-inner form .wrapper-checkbox .checkbox input[type="checkbox"] {
+.section-contact .section-inner form .checkbox input[type="checkbox"] {
   display: none;
 }
 
-.section-contact .section-inner form .wrapper-checkbox .checkbox input[type="checkbox"] + label {
+.section-contact .section-inner form .checkbox input[type="checkbox"] + label {
   display: block;
   position: relative;
   padding-left: 2em;
@@ -1401,7 +1397,7 @@ body {
   -ms-user-select: none;
 }
 
-.section-contact .section-inner form .wrapper-checkbox .checkbox input[type="checkbox"] + label:before {
+.section-contact .section-inner form .checkbox input[type="checkbox"] + label:before {
   content: '';
   display: block;
   width: 20px;
@@ -1416,7 +1412,7 @@ body {
   transition: all .12s, border-color .08s;
 }
 
-.section-contact .section-inner form .wrapper-checkbox .checkbox input[type="checkbox"]:checked + label:before {
+.section-contact .section-inner form .checkbox input[type="checkbox"]:checked + label:before {
   width: 10px;
   top: -5px;
   left: 5px;
@@ -1428,7 +1424,7 @@ body {
   transform: rotate(45deg);
 }
 
-.section-contact .section-inner form .wrapper-checkbox button {
+.section-contact .section-inner form button {
   text-transform: uppercase;
   background-color: #1de9b6;
   border: none;
@@ -1449,12 +1445,6 @@ body {
     margin: 0 auto;
     margin-bottom: 1.5em;
   }
-  .section-contact .section-inner form .wrapper-checkbox {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .section-contact .section-inner form .wrapper-input {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1474,12 +1464,17 @@ body {
     padding: 1.5em 1.5em;
     margin-bottom: 3em;
   }
-  .section-contact .section-inner form label {
+  .section-contact .section-inner form .checkbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-contact .section-inner form .checkbox label {
     font-size: 1.6rem;
     position: absolute;
-    margin-left: 1.2em;
   }
-  .section-contact .section-inner form button {
+  .section-contact .section-inner form .checkbox button {
     font-size: 1.6rem;
     margin-top: 2em;
   }
@@ -1509,18 +1504,17 @@ body {
     margin: 0 auto;
     margin-bottom: 1.5em;
   }
-  .section-contact .section-inner form .wrapper-checkbox {
+  .section-contact .section-inner form .checkbox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .section-contact .section-inner form .wrapper-checkbox label {
+  .section-contact .section-inner form .checkbox label {
     font-size: 1.6rem;
     position: absolute;
-    margin-left: 1.2em;
   }
-  .section-contact .section-inner form .wrapper-checkbox button {
+  .section-contact .section-inner form .checkbox button {
     font-size: 1.6rem;
     margin-top: 2em;
   }
