@@ -1,0 +1,164 @@
+// === Mixins === 
+@mixin font-main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin font-secondary {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin font-third {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@mixin font-fourth {
+    font-family: 'Raleway', sans-serif;
+}
+// === Mixins === 
+
+
+// === button === 
+@mixin button() {
+    width: 159px;
+    height: 54px;
+    background: #061e37;
+    border: none;
+    font-size: 1.5rem;
+    @include font-secondary();
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 400;
+}
+// === / button === 
+
+// === Colors === 
+    $color-white:#ffff;
+// === Colors === 
+
+// === Common === 
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    outline: none;
+}
+
+body,a,div,p,h1, h2, h3, h4, h5,h6,li,ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    @include font-main;
+    list-style: none;
+    // border: 2px solid red;
+} 
+
+body {
+    font-size: 1.6rem;
+}
+
+.section-outer {
+    width: 100%;
+    min-width: 3px;
+}
+
+.section-inner {
+    width: 93%;
+    margin: 0 auto;
+}
+
+
+// === wrapper-title === 
+@import "article";
+// === / wrapper-title ===
+
+
+// === Common === 
+
+// === header === 
+@import "header";
+// === / header ===
+
+// === easy === 
+@import "easy";
+// === / easy ===
+
+
+// === counts === 
+@import "counts";
+// === / counts ===
+
+// === services === 
+@import "services";
+// === / services ===
+
+// === customers === 
+@import "customers";
+// === / customers ===
+
+
+// === team === 
+@import "team";
+// === / team ===
+
+// === contact === 
+@import "contact";
+// === / contact ===
+
+
+// === footer === 
+@import "footer";
+// === / footer ===
+
+
+// === double slider === 
+// @import "double_slider";
+// === / double slider  ===
+
+// === triple slider === 
+// @import "triple-slider";
+// === / triple slider  ===
+
+
+/*==================================================
+    media queries
+==================================================*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    // br {
+    //     display: none;
+    // }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1499.98px) {
+    
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1500px) {
+}
+
+
+.trail { /* className for the trail elements */
+    position: absolute;
+    height: 6px; width: 6px;
+    border-radius: 3px;
+    background: #008080;
+}
+
+tab-panel {
+    font-size: 5rem;
+    display: flex;
+}
+
+.button {
+    padding: 23px;
+    background-color: #008080;
+}

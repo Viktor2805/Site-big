@@ -1,0 +1,211 @@
+.section-counts {
+    display: flex;
+    height: 16em;
+
+    @mixin properties {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        &_text {
+            color: #ffff;
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 3.5rem;
+            @include font-fourth();
+            margin-left: 5%;
+            letter-spacing: 1px;
+
+        }
+    }
+
+    &-business {
+        background-color: #80d8ff;
+        @include properties();
+    }
+    &-downloads {
+        background-color: #82b1ff;
+        @include properties();
+    }
+    &-free-installs {
+        background-color: #b388ff;
+        @include properties();
+
+    }
+    &-pro-users {
+        background-color: #ea80fc;
+        @include properties();
+    }
+
+    .circle {
+        display: flex;
+        width: 16em;
+        height: 16em;
+        background-color: #ffff;
+        border-radius: 50%;
+        justify-content: center;
+
+        .section-counts-business_icon {
+            width: 35%;
+        }
+    }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .section-counts {
+        display: flex;
+        height: 17em;
+        flex-wrap: wrap;
+    
+        @mixin properties {
+            width: 50%;
+
+            &_text {
+                font-size: 1.3rem;
+                line-height: 2rem;
+            }
+        }
+
+        &-business {
+            @include properties();
+        }
+        &-downloads {
+            @include properties();
+        }
+        &-free-installs {
+            @include properties();
+        }
+        &-pro-users {
+            @include properties();
+        }
+
+        .circle {
+            width: 10em;
+            height: 10em;
+
+            .section-counts-business_icon {
+                width: 35%;
+            }
+        }
+    }
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .section-counts {
+        display: flex;
+        height: 19em;
+        flex-wrap: wrap;
+    
+        @mixin properties {
+            width: 50%;
+
+            &_text {
+                font-size: 1.5rem;
+                line-height: 2.2rem;
+            }
+        }
+
+        &-business {
+            @include properties();
+        }
+        &-downloads {
+            @include properties();
+        }
+        &-free-installs {
+            @include properties();
+        }
+        &-pro-users {
+            @include properties();
+        }
+        
+        .circle {
+            width: 11em;
+            height: 11em;
+
+            .section-counts-business_icon {
+                width: 35%;
+            }
+        }
+    }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .section-counts {
+        display: flex;
+        height: 24em;
+        flex-wrap: wrap;
+    
+        @mixin properties {
+            width: 50%;
+
+            &_text {
+                font-size: 2rem;
+                line-height: 2.7rem;
+            }
+        }
+
+        &-business {
+            @include properties();
+        }
+        &-downloads {
+            @include properties();
+        }
+        &-free-installs {
+            @include properties();
+        }
+        &-pro-users {
+            @include properties();
+        }
+        
+        .circle {
+            width:14em;
+            height:14em;
+
+            .section-counts-business_icon {
+                width: 35%;
+            }
+        }
+    }
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1499.98px) {
+    .section-counts {
+        height: 15em;
+
+        &_text {
+            font-size: 1.6rem;
+            line-height: 2.7rem;
+        }
+
+        .circle {
+            width: 13em;
+            height: 13em;
+
+            .section-counts-business_icon {
+                width: 35%;
+            }
+        }
+    }
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1800px) {
+       .section-counts {
+        height: 17em;
+
+        &_text {
+            font-size: 2.5rem;
+            line-height: 3.8rem;
+        }
+
+        .circle {
+            width: 19em;
+            height: 19em;
+
+            .section-counts-business_icon {
+                width: 35%;
+            }
+        }
+    }
+}
