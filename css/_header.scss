@@ -155,7 +155,7 @@
                 }
     
                 .video-button-text {
-                    margin-top: 4em;
+                    margin-top: 7em;
                     font-size: 1.3rem;
                     position: absolute;
                     text-transform: uppercase;
@@ -473,65 +473,284 @@
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {  
-
+    .section-header {
+        height: auto;
+    
+            .section-inner {
+                position: relative;
+    
+                .section-header-wrapper {   
+                    // display: flex;
+                    align-items: flex-start;
+                    margin-top: 11em;
+                    justify-content: space-between;
+                    flex-direction: column;
+            
+                    &__logo {
+    
+                        &-img {
+                        }
+    
+                        &-text {
+                            font-size: 1.6rem;
+                        }
+                    }
+    
+                    &__nav {
+                        margin-top: 5em;
+                        margin-bottom: 15em;
+                        display: none;
+                        flex-direction: column;
+    
+                        li, a {
+                                margin-left: 0;
+                                font-size: 2rem;
+                                margin-top: 1em;
+                        }
+                        a:hover {
+                        }
+                    }
+    
+                    &__button {
+                        display: none;
+                        width: 6em;
+                        height: 2em;
+                        background:none;
+                        border: 1px solid #ffffff;
+                        font-size: 1.8rem;
+                    }
+                }  
+            
+                .section-header__humburger {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    margin-top: 11em;
+    
+                    .line {
+                        width: 30px;
+                        height: 3px;
+                        background: white;
+                        margin:5px;
+                        border-radius:1px;
+                    }
+                }
+                
+                .section-header-content {
+                    margin-top: 15em;
+                    justify-content: space-between;
+                    flex-direction: column;
+    
+                    &__title {
+                        flex-direction:  column;
+                        width: 100%;
+                        text-align: center;
+                        // border: 2px solid red;
+    
+                        &_extraBold {
+                            font-size: 3rem;
+                            font-weight: 700;
+                        }
+    
+                        &_regular {
+                            font-size: 1.8rem;
+                            margin-bottom: 2em;
+                            margin-top: 1em;
+                            line-height: 1.6em;
+                            text-align: justify;
+                            letter-spacing: 1px;
+    
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+    
+                    &__button {
+                        align-items: center;
+                        flex-direction: column;
+    
+                        &_buy {
+                            button {
+                                margin-right: 0;
+                                margin-bottom: 1em;
+                            }         
+                        }
+                        
+                        &_try {
+                            button {
+                            }        
+                        }  
+                    }
+    
+                    &__video {
+                        margin-top: 20em;
+                        width: 100vw;
+                        margin-left: calc(50% - 50vw);
+                        height: 100%; 
+                        
+                        video {
+                            border-radius: 0;
+                        }
+            
+                        .video-button-play {
+                            width: 25em;    
+                            height: 25em;
+                        }
+            
+                        .video-button-play::before {
+                            border-width: 4em 0 4em 4em;
+                        }
+    
+                        .video-button-text {
+                            font-size: 1.3rem;
+                            // top: 20px;
+                        }
+                    }
+                }
+            }
+    }
 }
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1499.98px) {
- 
-    // .section-header-wrapper__content {
-    //     display: flex;
-    //     margin-top: 165px;
-    //     justify-content: space-between;
-
-    //     &-title {
-    //         border: 1px solid red;
-    //         display: flex;
-    //         flex-direction:  column;
-    //         width: 60%;
-
-    //         &_extraBold {
-    //             @include font-main();
-    //             font-size: 5.5rem;
-    //             font-weight: 800;
-    //             text-transform: uppercase;
-    //         }
-
-    //         &_regular {
-    //             @include font-main();
-    //             font-size: 1.8rem;
-    //             font-weight: 'regular';
-    //             margin-bottom: 2em;
-    //             line-height: 1.6em;
-    //         }
-    //     }
-
-    //     &-button {
-    //         display: flex;
-    //         border: 1px solid red;
-    //         height: 100%;
-    //         align-items: flex-end;
-
-    //         &_buy {
-    //             button {
-    //                 @include button ();
-    //                 margin-right: 30px;
-    //             }         
-    //         }
+    .section-header {
+        height: auto;
+    
+            .section-inner {
+                position: relative;
+    
+                .section-header-wrapper {   
+                    // display: flex;
+                    align-items: flex-start;
+                    margin-top: 11em;
+                    justify-content: space-between;
+                    flex-direction: column;
             
-    //         &_try {
-    //             button {
-    //                 @include button ();
-    //                 background: #ffff;
-    //                 font-weight: bold;
-    //             }        
-    //         }  
-    //     }
-
-    //     &-video {
-    //         widows: 100%;
-    //         max-height: 100%;
-    //         border: 2px solid red;
-    //     }}
+                    &__logo {
+    
+                        &-img {
+                        }
+    
+                        &-text {
+                            font-size: 1.6rem;
+                        }
+                    }
+    
+                    &__nav {
+                        margin-top: 5em;
+                        margin-bottom: 15em;
+                        display: none;
+                        flex-direction: column;
+    
+                        li, a {
+                                margin-left: 0;
+                                font-size: 2rem;
+                                margin-top: 1em;
+                        }
+                        a:hover {
+                        }
+                    }
+    
+                    &__button {
+                        display: none;
+                        width: 6em;
+                        height: 2em;
+                        background:none;
+                        border: 1px solid #ffffff;
+                        font-size: 1.8rem;
+                    }
+                }  
+            
+                .section-header__humburger {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    margin-top: 11em;
+    
+                    .line {
+                        width: 30px;
+                        height: 3px;
+                        background: white;
+                        margin:5px;
+                        border-radius:1px;
+                    }
+                }
+                
+                .section-header-content {
+                    margin-top: 15em;
+                    justify-content: space-between;
+                    flex-direction: column;
+    
+                    &__title {
+                        flex-direction:  column;
+                        width: 100%;
+                        text-align: center;
+                        // border: 2px solid red;
+    
+                        &_extraBold {
+                            font-size: 3rem;
+                            font-weight: 700;
+                        }
+    
+                        &_regular {
+                            font-size: 1.8rem;
+                            margin-bottom: 2em;
+                            margin-top: 1em;
+                            line-height: 1.6em;
+                            text-align: justify;
+                            letter-spacing: 1px;
+    
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+    
+                    &__button {
+                        align-items: center;
+                        flex-direction: column;
+    
+                        &_buy {
+                            button {
+                                margin-right: 0;
+                                margin-bottom: 1em;
+                            }         
+                        }
+                        
+                        &_try {
+                            button {
+                            }        
+                        }  
+                    }
+    
+                    &__video {
+                        margin-top: 20em;
+                        width: 100vw;
+                        margin-left: calc(50% - 50vw);
+                        height: 100%; 
+                        
+                        video {
+                            border-radius: 0;
+                        }
+            
+                        .video-button-play {
+                            width: 25em;    
+                            height: 25em;
+                        }
+            
+                        .video-button-play::before {
+                            border-width: 4em 0 4em 4em;
+                        }
+    
+                        .video-button-text {
+                            font-size: 1.3rem;
+                            // top: 20px;
+                        }
+                    }
+                }
+            }
+    }
+  
 }
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1500px) {

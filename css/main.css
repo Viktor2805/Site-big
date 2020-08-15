@@ -338,7 +338,7 @@ body {
 }
 
 .section-header .section-inner .section-header-content__video .video-button-text {
-  margin-top: 4em;
+  margin-top: 7em;
   font-size: 1.3rem;
   position: absolute;
   text-transform: uppercase;
@@ -618,7 +618,257 @@ body {
 }
 
 /* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section-header {
+    height: auto;
+  }
+  .section-header .section-inner {
+    position: relative;
+  }
+  .section-header .section-inner .section-header-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 11em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-header .section-inner .section-header-wrapper__logo-text {
+    font-size: 1.6rem;
+  }
+  .section-header .section-inner .section-header-wrapper__nav {
+    margin-top: 5em;
+    margin-bottom: 15em;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-header .section-inner .section-header-wrapper__nav li, .section-header .section-inner .section-header-wrapper__nav a {
+    margin-left: 0;
+    font-size: 2rem;
+    margin-top: 1em;
+  }
+  .section-header .section-inner .section-header-wrapper__button {
+    display: none;
+    width: 6em;
+    height: 2em;
+    background: none;
+    border: 1px solid #ffffff;
+    font-size: 1.8rem;
+  }
+  .section-header .section-inner .section-header__humburger {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: 11em;
+  }
+  .section-header .section-inner .section-header__humburger .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    border-radius: 1px;
+  }
+  .section-header .section-inner .section-header-content {
+    margin-top: 15em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-header .section-inner .section-header-content__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .section-header .section-inner .section-header-content__title_extraBold {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .section-header .section-inner .section-header-content__title_regular {
+    font-size: 1.8rem;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    line-height: 1.6em;
+    text-align: justify;
+    letter-spacing: 1px;
+  }
+  .section-header .section-inner .section-header-content__title_regular br {
+    display: none;
+  }
+  .section-header .section-inner .section-header-content__button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-header .section-inner .section-header-content__button_buy button {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  .section-header .section-inner .section-header-content__video {
+    margin-top: 20em;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    height: 100%;
+  }
+  .section-header .section-inner .section-header-content__video video {
+    border-radius: 0;
+  }
+  .section-header .section-inner .section-header-content__video .video-button-play {
+    width: 25em;
+    height: 25em;
+  }
+  .section-header .section-inner .section-header-content__video .video-button-play::before {
+    border-width: 4em 0 4em 4em;
+  }
+  .section-header .section-inner .section-header-content__video .video-button-text {
+    font-size: 1.3rem;
+  }
+}
+
 /* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1499.98px) {
+  .section-header {
+    height: auto;
+  }
+  .section-header .section-inner {
+    position: relative;
+  }
+  .section-header .section-inner .section-header-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 11em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-header .section-inner .section-header-wrapper__logo-text {
+    font-size: 1.6rem;
+  }
+  .section-header .section-inner .section-header-wrapper__nav {
+    margin-top: 5em;
+    margin-bottom: 15em;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-header .section-inner .section-header-wrapper__nav li, .section-header .section-inner .section-header-wrapper__nav a {
+    margin-left: 0;
+    font-size: 2rem;
+    margin-top: 1em;
+  }
+  .section-header .section-inner .section-header-wrapper__button {
+    display: none;
+    width: 6em;
+    height: 2em;
+    background: none;
+    border: 1px solid #ffffff;
+    font-size: 1.8rem;
+  }
+  .section-header .section-inner .section-header__humburger {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: 11em;
+  }
+  .section-header .section-inner .section-header__humburger .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    border-radius: 1px;
+  }
+  .section-header .section-inner .section-header-content {
+    margin-top: 15em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-header .section-inner .section-header-content__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .section-header .section-inner .section-header-content__title_extraBold {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .section-header .section-inner .section-header-content__title_regular {
+    font-size: 1.8rem;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    line-height: 1.6em;
+    text-align: justify;
+    letter-spacing: 1px;
+  }
+  .section-header .section-inner .section-header-content__title_regular br {
+    display: none;
+  }
+  .section-header .section-inner .section-header-content__button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-header .section-inner .section-header-content__button_buy button {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  .section-header .section-inner .section-header-content__video {
+    margin-top: 20em;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    height: 100%;
+  }
+  .section-header .section-inner .section-header-content__video video {
+    border-radius: 0;
+  }
+  .section-header .section-inner .section-header-content__video .video-button-play {
+    width: 25em;
+    height: 25em;
+  }
+  .section-header .section-inner .section-header-content__video .video-button-play::before {
+    border-width: 4em 0 4em 4em;
+  }
+  .section-header .section-inner .section-header-content__video .video-button-text {
+    font-size: 1.3rem;
+  }
+}
+
 /* Extra large devices (large desktops, 1200px and up)*/
 .section-easy .section-inner .article .article-subtitle {
   font-size: 2.5rem;
